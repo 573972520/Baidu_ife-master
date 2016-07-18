@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/mainPage.css" />
+		<link rel="stylesheet" href="css/sidebar.css" />
+	</head>
+	<body>
+		<div class="warp">
+			<div class="header">
+				<div class="logo fl"><img src="img/logo.png" alt="logo" /></div>
+				<div class="login fr">
+					<div class="search fl">
+						<span class="icon-search"></span>
+						<img src="img/search_icon.png" id="icon-search" />
+						<input type="text"/>
+					</div>
+					<div class="loginMain fr">
+						<img src="img/login.png" alt="login_logo"/>
+						<p>登入</p>
+					</div>
+				</div>
+			</div>
+			
+			<!--状态栏-->
+			<div class="Document fr">
+				<pre>C站   /   个人报表  /   文件一  /   <span>文档一</span></pre>
+			</div> 
+			
+			<div class="container clearfix">
+				
+				<!--侧栏-->
+				<div class="sidebar fl">
+					<!--头像部分-->
+					<div class="head-portrait">
+						
+						<div class="head-top">
+							<img src="img/user_photo.png" alt="headImg" />
+							<p>DQT</p>
+						</div>
+						
+						<div class="head-bottom">
+							
+							<div class="head-left fl">
+								<p>110</p>
+								<p>收藏</p>
+							</div>
+							<div class="head-right fr">
+								<p>313</p>
+								<p>粉丝</p>
+							</div>
+							
+						</div>
+						
+					</div>
+					<!--导航栏-->
+					<div class="nav">
+						<ul>
+							<li class="ActiveLi">
+								<img src="img/1.png" /><p style="color: white;">个人报表</p>
+								<div class="NextUl fl">
+										<div class="D-one">
+											<img src="img/arrow_unfold.png" />
+											<img src="img/folder_unfold.png" />
+											<span>文件夹一</span>
+										</div>
+										<div class="Docu">
+											<img src="img/document_selected.png" />
+											<span>文档</span>
+										</div>
+										<div class="D-Three">
+											<img src="img/arrow.png" />
+											<img src="img/folder.png" />
+											<span>文件夹二</span>
+										</div>
+								</div>
+								
+							</li>
+							<li>
+								<img src="img/4.png"/><p>个人收藏</p>
+							</li>
+							<li>
+								<img src="img/3.png" /><p>我的分享</p>
+							</li>
+							<li>
+								<img src="img/4.png"/><p>图库</p>
+							</li>
+							<li>
+								<img src="img/4.png"/><p>成长记录</p>
+							</li>
+							<li>
+								<img src="img/6.png" /><p>账户信息</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				
+				
+				<!--数据栏-->
+				<div class="mainPage fl">  <!--注意这里的float-->
+					<div class="query ">
+						<div class="Form ">
+							<div class="form1 fl">
+								<label>查询项</label>
+								<select>
+									<option>第一项目</option>
+									<option>第二项目</option>
+								</select>
+							</div>
+							
+							<div class="form2 fl">
+								<div class="TwoOne fl">
+									<label>买方</label>
+								<select>
+									<option>小红</option>
+									<option>小芳</option>
+								</select>
+								</div>
+								<div class="TwoThree fr">
+									<img src="img/change.png" alt="chenage" />
+								</div>
+								<div class="TwoTwo fl">
+									<label>卖方</label>
+								<select>
+									<option>小红</option>
+									<option>小芳</option>
+								</select>
+								</div>
+							</div>
+							<div class="form3 fl">
+								<div class="ThreeOne fl">
+									<label for="Data">日期</label>
+									<input type="text" id="Data" placeholder="   yyyy-mm-dd" />
+									<label>总耗时</label>
+									<select style="width: 80px;">
+										<option>1天</option>
+										<option>2天</option>
+									</select>
+								</div>
+									
+								<div class="ThreeTwo fl">
+									<label>人数</label>
+									<select style="width: 80px;">
+										<option>1人</option>
+										<option>2人</option>
+									</select>
+									<label>成交项目</label>
+									<select>
+										<option>1项</option>
+										<option>2项</option>
+									</select>
+								</div>
+								
+							</div>
+							<div class="form4 ">
+								<input type="submit" value="搜索"/>
+							</div>
+						</div>
+					
+					
+					</div>
+					
+					
+						<div class="Time">
+							<div class="leftBtn fl">
+								<img src="img/left_arrow.png" />
+							</div>
+							
+							<div class="TimeNav fl">
+							<ul>
+								
+								<li>
+									<div class="text">
+										<p>8:00 am</p>
+										<p><span>¥</span> <span id="monery">1200</span></p>
+									</div>
+									
+								</li>
+								<li>
+									<div class="text">
+										<p>8:00 am</p>
+										<p><span>¥</span> <span id="monery">1200</span></p>
+									</div>
+								</li>
+								<li>
+									<div class="text">
+										<p>8:00 am</p>
+										<p><span>¥</span> <span id="monery">1200</span></p>
+									</div>
+								</li>
+								<li>
+									<div class="text">
+										<p>8:00 am</p>
+										<p><span>¥</span> <span id="monery">1200</span></p>
+									</div>
+								</li>
+								<li>
+									<div class="text">
+										<p>10:00 am</p>
+										<p><span>¥</span> <span id="monery">1200</span></p>
+									</div>
+								</li>
+								<li>
+									<div class="text">
+										<p>10:00 am</p>
+										<p><span>¥</span> <span id="monery">1200</span></p>
+									</div>
+								</li>
+								
+							</ul>
+							</div>
+							<div class="RightBtn fl">
+								<img src="img/right_btn.png" />
+							</div>
+							<div class="History fl clearfix">
+								<img src="img/history.png" />
+								<span>历史查询</span>
+							</div>
+						</div>
+					<div class="titleOne"><p>2016年4月份统计</p></div>
+					<div class="volume">
+						<div class="leftLi fl">
+							<div class="volumeleft fl">
+								<p>1311111</p>
+								<p>成交量</p>
+							</div>
+							<div class="volumeright fr">
+								
+							</div>
+						</div>
+						<div class="midUl fl">
+							<ul>
+								<li>
+									<div class="volumeleft fl">
+								<p>1311111</p>
+								<p>成交量</p>
+							</div>
+							<div class="volumerightT fr">
+								
+							</div>
+								</li>
+								<li>
+									<div class="volumeleft fl">
+								<p>1311111</p>
+								<p>成交量</p>
+							</div>
+							<div class="volumeright fr">
+								
+							</div>
+								</li>
+						</ul>
+						</div>
+						
+						<div class="rightLi fl">
+						<div class="volumeleft fl">
+								<p>1311111</p>
+								<p>成交量</p>
+							</div>
+							<div class="volumeright fr">
+								
+							</div>
+						</div>
+					</div>
+					<div class="detailData">
+						<div class="topLeft fl shadowm">
+							<div class="topHeader">
+								<p>第一组项目</p>
+							</div>
+							<div class="Form">
+								<div class="tHeader">
+									<ul>
+										<li id="firstLi"><a href="#">项目一</a></li>
+										<li><a href="#">项目一</a></li>
+										<li><a href="#">项目一</a></li>
+										<li><a href="#">项目一</a></li>
+										<li><a href="#">项目一</a></li>
+									</ul>
+								</div>
+								<div class="tBody">
+									<table border="1">
+										<tr>
+											<td>购买材料</td>
+											<td>购买材料</td>
+											<td>购买材料</td>
+											<td>购买材料</td>
+										</tr>
+										<tr>
+											<td>购买材料</td>
+											<td>购买材料</td>
+											<td>购买材料</td>
+											<td>购买材料</td>
+										</tr>
+										<tr>
+											<td>购买材料</td>
+											<td>购买材料</td>
+											<td>购买材料</td>
+											<td>购买材料</td>
+										</tr>
+										<tr>
+											<td>购买材料</td>
+											<td>购买材料</td>
+											<td>购买材料</td>
+											<td>购买材料</td>
+										</tr>
+										<tr>
+											<td>购买材料</td>
+											<td>购买材料</td>
+											<td>购买材料</td>
+											<td>购买材料</td>
+										</tr>
+										<tr>
+											<td>购买材料</td>
+											<td>购买材料</td>
+											<td>购买材料</td>
+											<td>购买材料</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							
+						</div>
+						<div class="topRight fl shadowm">
+							<div class="topHeader">
+								<p>第一组项目</p>
+							</div>
+							<div class="Title">
+								<p class="grayText">标题</p>
+								<p class="nommuo">项目报表三</p>
+							</div>
+							<div class="sall">
+								<div class="left fl">
+									
+									<p class="grayText" style="margin-left: 10px;">价格</p>
+									<p class="nommuo" style="margin-left: 10px;">¥123</p>
+								</div>
+								<div class="right fl">
+									
+									<p class="grayText" style="margin-left: 10px;">负责人</p>
+									<p class="nommuo" style="margin-left: 10px;">小a</p>
+								</div>
+							</div>
+							<div class="page">
+								
+								<p class="grayText">详细描述</p>
+								<p class="nommuo">项目负责人...</p>
+							</div>
+							<div class="bottomBtn">
+								<div class="midd fl"><input type="checkbox"/><p>遵守保密协议</p></div>
+								
+								<input type="submit" value="搜索" id="BtnOne" />
+							</div>
+						</div>
+						<div class="bottomLeft fl shadowm">
+							<div class="topHeader">
+								<p>日历</p>
+							</div>
+							<div class="HeaderContainer">
+								<div class="YearM">
+									<select>
+										<option>2016年</option>
+									</select>
+									<select>
+										<option>4月</option>
+									</select>
+									<select>
+										<option>标注日期</option>
+									</select>
+									<input type="submit" value="返回今天"/>
+								</div>
+								<div class="Firday">
+									<ul>
+										<li>一</li>
+										<li>二</li>
+										<li>三</li>
+										<li>四</li>
+										<li>五</li>
+										<li>六</li>
+										<li>日</li>
+									</ul>
+								</div>
+								<div class="ditelaDay">
+									<div class="Blank">
+										
+									</div>
+									<div class="DayT">
+										<p>1</p>
+										<p class="RedText">愚人节</p>
+									</div>
+									<div class="DayT">
+										<p class="RedText">2</p>
+										<p>廿五</p>
+									</div>
+									<div class="DayT">
+										<p class="RedText">3</p>
+										<p>廿六</p>
+									</div>
+									<div class="DayT">
+										<p>4</p>
+										<p>廿七</p>
+									</div>
+									<div class="DayT">
+										<p>5</p>
+										<p class="RedText">清明</p>
+									</div>
+									<div class="DayT">
+										<p>6</p>
+										<p>廿九</p>
+									</div>
+									<div class="DayT">
+										<p >7</p>
+										<p>三月</p>
+									</div>
+									<div class="DayT BorderDay">
+										<p class="RedText">8</p>
+										<p>初二</p>
+									</div>
+									<div class="DayT">
+										<p class="RedText">9</p>
+										<p>初三</p>
+									</div>
+									<div class="DayT">
+										<p class="RedText">10</p>
+										<p>初四</p>
+									</div>
+									<div class="DayT">
+										<p>11</p>
+										<p>初五</p>
+									</div>
+									<div class="DayT">
+										<p>12</p>
+										<p>初六</p>
+									</div>
+									<div class="DayT">
+										<p>13</p>
+										<p>初七</p>
+									</div>
+									<div class="DayT">
+										<p class="RedText">14</p>
+										<p>初八</p>
+									</div>
+									<div class="DayT">
+										<p class="RedText">15</p>
+										<p>初九</p>
+									</div>
+									<div class="DayT">
+										<p class="RedText">16</p>
+										<p>初十</p>
+									</div>
+									<div class="DayT">
+										<p class="RedText">17</p>
+										<p>十一</p>
+									</div>
+									<div class="DayT">
+										<p>18</p>
+										<p>十二</p>
+									</div>
+									<div class="DayT">
+										<p>19</p>
+										<p>十三</p> 
+									</div>
+									<div class="DayT">
+										<p>20</p>
+										<p>十四</p>
+									</div>
+									<div class="DayT">
+										<p>21</p>
+										<p>十五</p>
+									</div> 
+									<div class="DayT">
+										<p>22</p>
+										<p>十六</p>
+									</div>
+									<div class="DayT">
+										<p class="RedText">23</p>
+										<p>十七</p>
+									</div>
+									<div class="DayT">
+										<p class="RedText">24</p>
+										<p>十八</p>
+									</div>
+									<div class="DayT">
+										<p>25</p>
+										<p>十九</p>
+									</div>
+									<div class="DayT">
+										<p>26</p>
+										<p>廿十</p>
+									</div>
+									<div class="DayT">
+										<p>27</p>
+										<p>廿一</p>
+									</div>
+									<div class="DayT">
+										<p>28</p>
+										<p>廿二</p>
+									</div>
+									<div class="DayT">
+										<p>29</p>
+										<p>廿三</p>
+									</div>
+									<div class="DayT">
+										<p class="RedText">30</p>
+										<p>廿四</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bottomRight fl shadowm">
+							<div class="topHeader">
+								<p>汽车行业平拍榜</p>
+							</div>
+							<div class="CarContainer">
+								<div class="CarPageT">
+									<div class="Carleft fl">
+										<p>排名</p>
+									</div>
+									<div class="Carmid fl">
+										<p>品牌</p>
+									</div>
+									<div class="Carright fl">
+										<span>搜索指数</span>
+									</div>
+								</div>
+								
+								<div class="CarPage">
+									<div class="Carleft fl">
+										<p>排名</p>
+									</div>
+									<div class="Carmid fl">
+										<p>品牌</p>
+									</div>
+									<div class="Carright fl">
+										<span>搜索指数</span>
+									</div>
+									<div class="Line fl">
+											<b>
+												<i style="width: 80%;background-color: #FF0000;"></i>
+											</b>
+									</div>
+								</div>
+								
+								<div class="CarPage">
+									<div class="Carleft fl">
+										<p>排名</p>
+									</div>
+									<div class="Carmid fl">
+										<p>品牌</p>
+									</div>
+									<div class="Carright fl">
+										<span>搜索指数</span>
+									</div>
+									<div class="Line fl">
+											<b>
+												<i style="width: 75%;background-color: orangered;"></i>
+											</b>
+									</div>
+								</div>
+								
+								<div class="CarPage">
+									<div class="Carleft fl">
+										<p>排名</p>
+									</div>
+									<div class="Carmid fl">
+										<p>品牌</p>
+									</div>
+									<div class="Carright fl">
+										<span>搜索指数</span>
+									</div>
+									<div class="Line fl">
+											<b>
+												<i style="width: 75%;background-color: #1E90FF;"></i>
+											</b>
+									</div>
+								</div>
+								
+								<div class="CarPage">
+									<div class="Carleft fl">
+										<p>排名</p>
+									</div>
+									<div class="Carmid fl">
+										<p>品牌</p>
+									</div>
+									<div class="Carright fl">
+										<span>搜索指数</span>
+									</div>
+									<div class="Line fl">
+											<b>
+												<i></i>
+											</b>
+									</div>
+								</div>
+								
+								<div class="CarPage">
+									<div class="Carleft fl">
+										<p>排名</p>
+									</div>
+									<div class="Carmid fl">
+										<p>品牌</p>
+									</div>
+									<div class="Carright fl">
+										<span>搜索指数</span>
+									</div>
+									<div class="Line fl">
+											<b>
+												<i></i>
+											</b>
+									</div>
+								</div>
+								
+								
+								<div class="CarPage">
+									<div class="Carleft fl">
+										<p>排名</p>
+									</div>
+									<div class="Carmid fl">
+										<p>品牌</p>
+									</div>
+									<div class="Carright fl">
+										<span>搜索指数</span>
+									</div>
+									<div class="Line fl">
+											<b>
+												<i></i>
+											</b>
+									</div>
+								</div>
+								
+								<div class="CarPage">
+									<div class="Carleft fl">
+										<p>排名</p>
+									</div>
+									<div class="Carmid fl">
+										<p>品牌</p>
+									</div>
+									<div class="Carright fl">
+										<span>搜索指数</span>
+									</div>
+									<div class="Line fl">
+											<b>
+												<i></i>
+											</b>
+									</div>
+								</div>
+								
+								<div class="CarPage">
+									<div class="Carleft fl">
+										<p>排名</p>
+									</div>
+									<div class="Carmid fl">
+										<p>品牌</p>
+									</div>
+									<div class="Carright fl">
+										<span>搜索指数</span>
+									</div>
+									<div class="Line fl">
+											<b>
+												<i></i>
+											</b>
+									</div>
+								</div>
+								
+								<div class="CarPage">
+									<div class="Carleft fl">
+										<p>排名</p>
+									</div>
+									<div class="Carmid fl">
+										<p>品牌</p>
+									</div>
+									<div class="Carright fl">
+										<span>搜索指数</span>
+									</div>
+									<div class="Line fl">
+											<b>
+												<i></i>
+											</b>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

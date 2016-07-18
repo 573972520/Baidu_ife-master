@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			/*可以使用CSS3的方法实现*/
+			.wrap{
+			background-color: #CCCCCC;
+			width: 400px;
+			height: 200px;
+			overflow:hidden;
+			position: fixed;
+			 top: 50%;
+			 left: 50%;
+			 -webkit-transform: translateX(-50%) translateY(-50%);
+			 -moz-transform: translateX(-50%) translateY(-50%);
+			 -ms-transform: translateX(-50%) translateY(-50%);
+			 transform: translateX(-50%) translateY(-50%);
+}
+
+			.wrap .right{
+				width: 100px;
+				height: 100px;
+				background-color: #fc0;
+				border-radius: 400px;
+				position: absolute;
+				top: -50px;
+				left: -50px;
+			}
+			.wrap .left{
+				width: 100px;
+				height: 100px;
+				background-color: #fc0;
+				border-radius: 300px;
+				position: absolute;
+				top: 150px;
+				right: -50px;
+			}
+			
+			
+			/*但是不能用该方法实现,因为在此方法中父元素的高度固定*/
+			/*#father {
+				width: 100%;
+				margin: 0 auto;
+				height: 500px;
+				background-color: lightslategrey;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			#son {
+				background-color: #CCCCCC;
+				width: 400px;
+				height: 200px;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			.right {
+				width: 100px;
+				height: 100px;
+				background-color: #fc0;
+				border-radius: 400px;
+				position: absolute;
+				top: -50px;
+				left: -50px;
+			}
+			
+			.left {
+				width: 100px;
+				height: 100px;
+				background-color: #fc0;
+				border-radius: 300px;
+				position: absolute;
+				top: 150px;
+				right: -50px;
+			}*/
+		</style>
+	</head>
+
+	<body>
+
+		<div class="wrap">
+				<div class="right"></div>
+				<divs class="left"></div>
+			</div>
+
+		<!--<div id="father">
+			<div id="son">
+				<div class="right"></div>
+				<divs class="left">
+			</div>
+		</div>
+		</div>-->
+	</body>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				padding: 0;
+				margin: 0;
+			}
+			/*--简单的flex布局--*/
+			.container{
+				height: 300px;
+				background-color:red;
+				display: flex;  /*使用flex*/
+			}
+			.son{
+				height: 100px;
+				width: 100px;
+				margin: auto;  /*在Flex容器中，当项目边距设置为“auto”时，设置自动的垂直边距将使该项目完全集中两个轴。*/
+				background-color: white;
+			}
+			/*--六个子元素布局--*/
+			ul{
+				margin: 0;
+				padding: 0;
+			}
+			li{
+				list-style: none;
+			}
+			.flex-container{
+				display: flex;
+				flex-flow:row wrap;  /*这个是“flex-direction”和“flex-wrap”属性的缩写版本。同时定义了伸缩容器的主轴和侧轴*/
+				justify-content: space-around;  /*定义伸缩项目沿着主轴线的对齐方式  (space-around：伸缩项目会平均地分布在行里，两端保留一半的空间。)*/
+			}
+			.flex-item{
+				background-color: tomato;
+				padding: 5px;
+				width: 200px;
+				height: 150px;
+				margin-top: 10px;
+				
+				line-height: 150px;
+				color: white;
+				font-weight: bold;
+				font-size: 3em;
+				text-align: center;
+			}
+			/*--基本的弹性布局示例--*/
+			.flex{
+				width: 350px;
+				height: 200px;
+				margin: 0 auto;
+				border: 1px solid #555;
+				font: 14px arial;
+				
+				display: -webkit-flex;
+				-webkit-flex-direction: row;
+				
+				display: flex;
+				flex-direction:row;
+			}
+			
+			.flex > div{
+				-webkit-flex: 1 1 auto;   /*这是“flex-grow”、“flex-shrink”和“flex-basis”三个属性的缩写*/
+				flex: 1 1 auto;
+				
+				width: 30px;
+				
+				-webkit-transition: width 0.7s ease-out;
+				transition: width 0.7s ease-out;
+			}
+			
+			.flex > div:nth-child(1){background-color: #009246;}
+			.flex > div:nth-child(2){background-color: #F1F2F1;}
+			.flex > div:nth-child(2){background-color: #CE2B37;}
+			
+			.flex > div:hover{
+				width: 200px;
+			}
+			/*--flex属性详解--*/
+			.flex-one{
+				width: 100%;
+				height: 900px;
+				background-color: tomato;
+				
+				
+				/*--display: other values | flex | inline-flex;--*/
+				/*注意：设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。*/
+				display: flex;
+				display: -webkit-flex;
+				/*display: inline-flex;
+				display: -webkit-inline-flex;*/
+				
+				
+				/*--flex-direction: row | row-reverse | column | column-reverse--*/
+				/*--row:(默认值:在“ltr”排版方式下从左向右排列；在“rtl”排版方式下从右向左排列) column：类似 于row，不过是从上到下排列.--*/
+				/*--用来创建主轴，从而定义了伸缩项目放置在伸缩容器的方向。--*/
+				/*flex-direction: row;*/ 
+				
+				
+				/*--flex-wrap: nowrap | wrap | wrap-reverse --*/
+				/*--nowrap(默认值)：伸缩容器单行显示    wrap：伸缩容器多行显示  wrap-reverse：伸缩容器多行显示（方向和wrap相反）--*/
+				/*--用来定义伸缩容器里是单行还是多行显示，侧轴的方向决定了新行堆放的方向--*/
+				/*--我认为改属性的功能是：在达到可以换行的要求时，可以使设置的宽高度起作用--*/
+				flex-wrap: wrap;
+				
+				
+				/*--flex-flow: <‘flex-direction’> || <‘flex-wrap’>--*/
+				/*--这个是“flex-direction”和“flex-wrap”属性的缩写版本。同时定义了伸缩容器的主轴和侧轴。其默认值为“row nowrap”。--*/
+				
+				/*-webkit-flex-flow: row wrap-reverse;
+				flex-flow:  row wrap-reverse;*/
+				
+				
+				/*--justify-content: flex-start | flex-end | center | space-between | space-around;--*/
+				/*--space-between：伸缩项目会平均地分布在行里。第一个伸缩项目一行中的最开始位置，最后一个伸缩项目在一行中最终点位置。       space-around：伸缩项目会平均地分布在行里，两端保留一半的空间。--*/
+				/*--用来定义伸缩项目沿着主轴线的对齐方式--*/
+				/*justify-content: space-around;*/
+				
+				
+				/*-- align-content: flex-start | flex-end | center | space-between | space-around | stretch;--*/
+				/*--这个属性主要用来调准伸缩行在伸缩容器里的对齐方式--*/
+				/*align-content: space-between;*/
+				
+				
+				/*--align-items: flex-start | flex-end | center | baseline | stretch--*/
+				/*-- baseline：伸缩项目根据他们的基线对齐。  stretch（默认值）：伸缩项目拉伸填充整个伸缩容器--*/
+				align-items: center;
+				
+			
+			}
+			
+			.flex-one > div{
+				height: 200px;
+				width: 200px;
+				background-color: white;
+				margin: 10px;
+				flex-grow: 1;
+				flex-shrink: 1;
+			}
+			.flex-one > div:nth-child(5){
+				/*--order属性可以控制伸缩项目在他们的伸缩容器出现的顺序。--*/
+				order: -1;
+				
+				/*--align-self用来在单独的伸缩项目上覆写默认的对齐方式。--*/
+				/*--align-self: auto | flex-start | flex-end | center | baseline | stretch;--*/
+				align-self: flex-start; 
+				
+				/*--flex-grow根据需要用来定义伸缩项目的扩展能力--*/
+				/*--flex-grow: <number>; /* default 0 */
+				flex-grow: 4;
+				
+				/*--flex-shrink根据需要用来定义伸缩项目收缩的能力。 （负值对该属性无效。）  如果所有项目的flex-shrink属性都为1，当空间不足时，都将等比例缩小。如果一个项目的flex-shrink属性为0，其他项目都为1，则空间不足时，前者不缩小。--*/
+				/*--flex-shrink: <number>; /* default 1 */
+				flex-shrink: 0;
+				
+				/*--flex-basis这个用来设置伸缩基准值，剩余的空间按比率进行伸缩。--*/
+				/*--flex-basis: <length> | auto; /* default auto */
+				flex-basis: 4;
+				
+				/*--flex这是“flex-grow”、“flex-shrink”和“flex-basis”三个属性的缩写。其中第二个和第三个参数（flex-shrink、flex-basis）是可选参数。默认值为“0 1 auto”。--*/
+				/*--flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]    建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。--*/
+				flex: 4 6 4;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--
+        	作者：cfxinfo@163.com
+        	时间：2016-07-06
+        	描述：简单的flex布局--水平竖直居中（相对于其他水平竖直居中的方法来说，改方法实现是最简单的）
+        -->
+		<div class="container">
+			<div class="son"></div>
+		</div>
+		<br />
+		<!--
+        	作者：cfxinfo@163.com
+        	时间：2016-07-06
+        	描述：六个子元素布局
+        -->
+        <br />
+		<ul class="flex-container">
+			<li class="flex-item">1</li>
+			<li class="flex-item">2</li>
+			<li class="flex-item">3</li>
+			<li class="flex-item">4</li>
+			<li class="flex-item">5</li>
+			<li class="flex-item">6</li>
+		</ul>
+		<br />
+		<!--
+        	作者：cfxinfo@163.com
+        	时间：2016-07-06
+        	描述：基本的弹性布局示例
+        -->
+        <br />
+        <div class="flex">
+        	<div class="uno"></div>
+        	<div class="due"></div>
+        	<div class="tre"></div>
+        </div>
+        <br />
+        <!--
+        	作者：cfxinfo@163.com
+        	时间：2016-07-06
+        	描述：flex属性详解
+        -->
+        <br />
+        <div class="flex-one">
+        	<div class="item">1</div>
+        	<div class="item">2</div>
+        	<div class="item">3</div>
+        	<div class="item">4</div>
+        	<div class="item">5</div>
+        	<!--<div class="item">6</div>
+        	<div class="item">7</div>
+        	<div class="item">8</div>
+        	<div class="item">9</div>
+        	<div class="item">10</div>
+        	<div class="item">11</div>
+        	<div class="item">12</div>
+        	<div class="item">13</div>
+        	<div class="item">14</div>-->
+        	
+        </div>
+	</body>
+</html>

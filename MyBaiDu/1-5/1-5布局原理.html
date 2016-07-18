@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body{
+				min-width: 750px;  /*设定body的最小宽度，如果不设置改属性，会导致当页面的宽度变得很小时，左右两边的div会重叠 */
+			}
+			.right{
+				margin: 0 auto;
+				margin-top: 30px;
+				margin-left: 30px;
+				margin-right: 470px;   /*设定与右边距离大于SideInfo的宽度,这样就不会出现左右两边重叠的问题*/
+				border: 1px solid darkgray;
+			}
+			.left{
+				width: 355px;  /*比右边的margin-right要小点*/
+				float: right;
+				background-color: white;
+				margin-right: 30px;
+				border: 1px solid darkgray;
+				box-shadow: 3px 3px 1px gray;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 固定宽度的div必须在流动的div代码位置的上面-->
+		<!-- 固定宽度的div必须在流动的div代码位置的上面-->
+		<!-- 固定宽度的div必须在流动的div代码位置的上面-->
+			<div class="left"><p>固定</p>      <!-- 固定宽度的div必须在流动的div代码位置的上面-->
+			<h2 class="sideHeader">这以后是侧栏，这是标题</h2>
+				<br />
+				<form method="post" action="">
+					<div class="Form">
+						<div class="EmailForm">
+							<div class="infoTips"><label for="Email">请输入邮箱地址</label></div>
+							<div class="Input"><input type="text" id="Email" placeholder="这是一个文本框" /></div>
+						</div>
+						<div class="EmailTip">
+							<div class="Put">
+								<p>&ensp;</p>
+							</div>
+							<div class="info"><i>邮箱地址请按要求格式输入</i></div>
+						</div>
+						<div class="EmailForm" style="margin-bottom: 10px;">
+							<div class="infoTips"><label for="Password_One">请输入密码</label></div>
+							<div class="Input"><input type="password" id="Password_One" placeholder="这是一个文本框" /></div>
+						</div>
+						<div class="EmailForm">
+							<div class="infoTips"><label for="Password_Two">请再次输入密码</label></div>
+							<div class="Input"><input type="password" id="Password_Two" placeholder="这是一个文本框" /></div>
+						</div>
+						<div class="EmailTip" style="margin-bottom: 15px;">
+							<div class="Put">
+								<p>&ensp;</p>
+							</div>
+							<div class="info"><i>密码请为6-16位英文数字</i></div>
+						</div>
+						<div class="EmailForm" style="margin-bottom: 15px;">
+							<div class="infoTips"><label>性别</label></div>
+							<div class="Input"><input type="radio" name="sex" checked="checked" />&nbsp;男&nbsp;
+								<input type="radio" name="sex" />&nbsp;女&nbsp;
+							</div>
+						</div>
+						<div class="EmailForm" style="margin-bottom: 15px;">
+							<div class="infoTips"><label>城市</label></div>
+							<div class="Input"><select>
+						<option selected="selected">北京</option>
+						<option>上海</option>
+						<option>浙江</option>
+					</select></div>
+						</div>
+						<div class="EmailForm" style="margin-bottom: 15px;">
+							<div class="infoTips"><label>爱好</label></div>
+							<div class="Input">
+								<input type="checkbox" name="hobby" />&nbsp;运动&nbsp;
+								<input type="checkbox" name="hobby" />&nbsp;艺术&nbsp;
+								<input type="checkbox" name="hobby" />&nbsp;科学&nbsp;
+							</div>
+						</div>
+						<div class="EmailForm">
+							<div class="infoTips"><label>个人描述</label></div>
+							<div class="Input">
+								<textarea rows="6" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+							</div>
+						</div>
+					</div>
+					<br />
+					<button class="Submit"><p>提交表单</p></button>
+				</form>
+		</div>
+		<div class="right"><p>流动</p>
+			<br />
+				<h2 class="first">最后一篇文章一级标题</h2>
+				<h3 class="sencond">文章二级标题</h3>
+				<h4 class="author">文章作者 文章发表时间</h4>
+				<ol class="olList">
+					<li>排名1</li>
+					<li>排名2</li>
+					<li>排名3</li>
+				</ol>
+				<br />
+				<p id="tableinfo">下面是表格，需要的时候可以用border来进行设置</p>
+				<table class="Table" border="1">
+					<tbody>
+						<tr class="Tfirst">
+							<td>表头</td>
+							<td>表头</td>
+							<td>表头</td>
+						</tr>
+						<tr>
+							<td>表头内容</td>
+							<td>表头内容</td>
+							<td><a href="#">操作</a></td>
+						</tr>
+						<tr>
+							<td>表头内容</td>
+							<td>表头内容</td>
+							<td><a href="#">操作</a></td>
+						</tr>
+						<tr>
+							<td>表头内容</td>
+							<td>表头内容</td>
+							<td><a href="#">操作</a></td>
+						</tr>
+						<tr>
+							<td>表头内容</td>
+							<td>表头内容</td>
+							<td><a href="#">操作</a></td>
+						</tr>
+						<tr>
+							<td>表头内容</td>
+							<td>表头内容</td>
+							<td><a href="#">操作</a></td>
+						</tr>
+						<tr class="Tlast">
+							<td>总计</td>
+							<td colspan="2">1000</td>
+						</tr>
+					</tbody>
+				</table>
+				<br />
+		</div>
+	
+	</body>
+</html>

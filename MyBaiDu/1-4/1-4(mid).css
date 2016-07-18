@@ -1,0 +1,33 @@
+/*(1) 方法是css3的写法，不兼容IE8*/
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: #000;
+  width:50%;
+  height: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/*(2)  在父级元素上面加上上面3句话，就可以实现子元素水平垂直居中。*/
+#father{
+	width: 30%;
+	margin: 0 auto;
+	height: 100px;
+	background-color: lightslategrey;
+	display:flex;
+	justify-content: center;  /*子元素水平居中*/
+	align-items: center;    /*子元素垂直居中*/
+	
+}
+
+#son{
+	width: 20px;
+	height: 20px;
+	background-color: yellow;
+}
+
+

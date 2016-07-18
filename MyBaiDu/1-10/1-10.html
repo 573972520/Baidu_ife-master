@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		
+			body{
+				padding: 20px;
+				margin: 0;
+				background-color: darkgray;
+			}
+			.flex-container{
+				background-color: white;
+				/*display: -webkit-flex;*/
+				display: flex;
+				justify-content: space-between;
+				align-items:center;
+				flex: none;
+			}
+			.flex-container > div{
+				width: 150px;
+				margin-bottom: 10px;
+				border: 1px solid red;
+				padding: 0;
+				font: 20px "微软雅黑";
+				text-align: center;
+			}
+			.flex-container > div:nth-child(1){
+				height:120px
+			}
+			.flex-container > div:nth-child(2){
+				height:100px;
+			}
+			.flex-container > div:nth-child(3){
+				height:40px;
+			}
+			.flex-container > div:nth-child(4){
+				height:200px;
+				border: 1px solid #1E90FF !important;
+			}
+			@media all and (max-width: 640px) {
+			.flex-container{
+				flex-wrap: wrap;
+				/*justify-content: flex-start;
+				align-content: space-around;
+				align-self: baseline;*/
+				-webkit-align-items: flex-start;/*--需要添加前缀！！！--*/
+               	 align-items: flex-start;
+			}
+			.first{
+				order: -1;
+			}
+			
+		}
+		</style>
+	</head>
+	<body>
+		<div class="flex-container">
+			<div class="item1">1</div>
+			<div class="item2">2</div>
+			<div class="item3">3</div>
+			<div class="item4 first">4</div>
+		</div>
+	</body>
+</html>

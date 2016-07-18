@@ -1,0 +1,518 @@
+.mainPage{
+	width: calc(100% - 260px);
+	background-color: #EEEEED;
+	padding: 20px 50px;
+}
+.mainPage .query {
+	width: 100%;
+	background-color: #EEEEED;
+}
+.mainPage .query .Form{
+	width: 100%;
+	height: 90px;
+	background-color: white;
+	padding: 5px 20px;
+}
+.mainPage .query .Form label{
+	color: darkgray;
+	margin: 0 5px;
+}
+.mainPage .query .Form select{
+	height: 25px;
+}
+.mainPage .query .Form input{
+	height: 25px;
+}
+.mainPage .query .Form .form1{
+	width: 20%;
+	margin-top: 9px;
+	margin-left: 29px;
+}
+
+.mainPage .query .Form .form2{
+	margin: 10px 0px;
+	width: 20%;
+}
+.TwoOne , .TwoTwo{
+	width: 70%;
+	height: 35px;
+}
+.TwoThree{
+	width: 30%;
+	height: 70px;
+	margin-top: 10px;
+}
+.mainPage .query .Form .form2 select{
+	width: 69%;
+}
+.mainPage .query .Form .form2 img{
+}
+.mainPage .query .Form .form3{
+	margin: 10px 0px;
+	margin-left: 42px;
+	width: 45%;
+	text-align: left;
+	height: 80px;
+}
+.ThreeOne , .ThreeTwo{
+	width: 80%;
+	height: 35px;
+}
+.mainPage .query .Form .form3 input{
+	width: 145px;
+	margin-bottom: 10px;
+}
+.mainPage .query .Form .form3 select{
+	width: 134px;
+	margin-bottom: 10px;
+}
+
+.mainPage .query .Form .form4{
+	width: 100%;
+	height: 30px;
+	margin-top: 25px;
+	text-align: right;
+}
+.mainPage .query .Form .form4 input{
+	width: 60px;
+	height: 25px;
+	border: 0;
+	color: white;
+	font-size: 14px;
+	background-color:#2189BF ;
+}
+.Time{
+	width: 100%;
+	height: 70px;
+	background-color: #EEEEED;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.Time .TimeNav{
+	width: calc(100% - 260px);
+	height: 70px;
+}
+.Time .TimeNav ul{
+	height: 100%;
+	width: 100%;
+}
+.Time .TimeNav ul li{
+	float: left;
+	height: 70px;
+	width: calc(16.6666% - 10px);
+	margin-left: 10px;
+	background-color: white;
+	text-align: center;
+	position: relative;
+}
+.Time .TimeNav ul li .text{
+	width: 100%;
+	height: 55px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.Time .TimeNav ul li #monery{
+	color: #ec654f;
+	font-size: 18px;
+}
+.Time .TimeNav ul li:hover{
+	border-top:4px solid #1E90FF ;
+	cursor: pointer;
+}
+.Time .leftBtn , .Time .RightBtn{
+	width: 40px;
+	height: 70px;
+	background-color: white;
+	margin-right: 10px;
+	text-align: center;
+	
+}
+.Time .RightBtn{
+	margin-left: 10px;
+}
+.Time .leftBtn img , .Time .RightBtn img{
+	margin-top: 25px;
+}
+.Time .History{
+	width: 150px;
+	height: 70px;
+	background-color: white;
+}
+.Time .History img{
+	float: left;
+	margin: 0px 20px;
+	margin-top: 18px;
+}
+.Time .History span{
+	font-size: 15px;
+	float: left;
+	margin-top: 25px;
+}
+.titleOne{
+	width: 100%;
+	height: 30px;
+}
+.titleOne p {
+	line-height: 30px;
+}
+.volume{
+	width: 100%;
+	height: 70px;
+}
+.volume .leftLi{
+	width: 25%;
+	height: 70px;
+	background-color: white;
+	padding: 10px 30px ;
+	border-left: 4px solid #43b29e;
+	margin-right: 20px;
+}
+.volume .rightLi{
+	width: 25%;
+	height: 70px;
+	margin-left: 20px;
+	background-color: white;
+	padding: 10px 20px ;
+	border-left: #e2cd46 solid 4px;
+}
+.volume .midUl{
+	width: calc(50% - 40px);
+	height: 70px;
+}
+.volume ul li{
+	width: calc(50% - 10px);
+	height: 70px;
+	float: left;
+	padding: 10px 20px ;
+	background-color: white;
+	border-left: #d04a36 solid 4px;
+}
+.volume ul li .volumeright{
+	width: 70px;
+	height: 50px;
+	background-color: #d04a36;
+}
+.volumerightT{
+	width: 70px;
+	height: 50px;
+	background-color: #1E90FF;
+}
+.volume ul li:nth-child(1){
+	margin-right: 20px;
+	border-left: #1E90FF solid 4px;
+}
+.volumeleft{
+	width: 40%;
+	height: 50px;
+	text-align: left;
+}
+.volumeleft p{
+	line-height: 25px;
+}
+.volumeleft p:nth-child(2){
+	color: darkgray;
+}
+.leftLi .volumeright{
+	width: 70px;
+	height: 50px;
+	background-color: #43b29e;
+}
+.rightLi .volumeright{
+	width: 70px;
+	height: 50px;
+	background-color: #e2cd46;
+}
+.detailData{
+	width: 100%;
+	height: 600px;
+	margin-top: 15px;
+	background-color: #EEEEED;
+}
+.shadowm{
+	border-radius: 8px;
+	box-shadow: 1px 0 1px 1px rgba(0,0,0,0.1);
+	border: 1px solid #d7d5d6;
+}
+.detailData .topHeader{
+	width: 100%;
+	height: 40px;
+	background-color: #F4F5F6;
+	clear: both;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border: 1px solid #d7d5d6;
+}
+.detailData .topHeader p{
+	line-height: 40px;
+	color: darkgray;
+	margin-left: 20px;
+}
+.detailData .topLeft{
+	width: calc(60% - 15px);
+	height: 320px;
+	background-color: white;
+	margin-right: 15px;
+}
+.topLeft .Form{
+	width: 100%;
+	height: 280px;
+	padding: 15px 25px;
+}
+.topLeft .Form .tHeader{
+	width: 100%;
+	height: 30px;
+}
+.topLeft .Form .tHeader ul{
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid #d7d5d6;
+}
+.topLeft .Form .tHeader ul li {
+	background-color: #DEDEF0;
+	text-align: center;
+	width: 70px;
+	height: 30px;
+	margin-right: 5px;
+	border: 0;
+	float: left;
+}
+.topLeft .Form .tHeader ul li a{
+	color: black;
+}
+.topLeft .Form .tHeader ul #firstLi{
+	background-color: white;
+	border: 1px solid #d7d5d6;
+	border-bottom: 0;
+}
+.topLeft .Form .tHeader ul li a{
+	line-height: 30px;
+}
+.topLeft .Form .tBody{
+	width: 100%;
+	height: 200px;
+	border: 1px solid #d7d5d6;
+	padding: 15px;
+	border-top: 0;
+}
+.topLeft .Form .tBody table{
+	width: 100%;
+	height: 169px;
+	text-align: center;
+	border-color:#d7d5d6 ;
+	border-collapse: collapse;
+}
+.topLeft .Form .tBody table tr td{
+	border-color:#d7d5d6 ;
+}
+.detailData .topRight{
+	width: 40%;
+	height: 320px;	
+	background-color: white;
+}
+.detailData .topRight .grayText{
+	color: #d7d5d6;
+	font-size: 12px;
+	line-height: 20px;
+}
+.detailData .topRight .nommuo{
+	font-size: 12px;
+	line-height: 20px;
+}
+.detailData .topRight .Title{
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.detailData .topRight .sall{
+	margin-left: 20px;
+	margin-right: 20px;
+	overflow: hidden;
+}
+.detailData .topRight .sall .left{
+	width: 35%;
+	border: 1px solid #d7d5d6;
+	border-left: 0;
+}
+.detailData .topRight .sall .right{
+	width: 65%;
+	border: 1px solid #d7d5d6;
+	border-left: 0;
+	border-right: 0;
+}
+.detailData .topRight .page{
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 145px;
+	border-bottom: 1px solid #d7d5d6;
+}
+.detailData .topRight .bottomBtn{
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 25px;
+	margin-top: 8px;
+}
+.detailData .topRight .bottomBtn .midd{
+	height: 25px;
+}
+.detailData .topRight .bottomBtn .midd p{
+	display: inline-block;
+	line-height: 25px;
+	margin-left: 10px;
+}
+.detailData .topRight .bottomBtn .midd input{
+	margin-top: 6px;
+	vertical-align: sub;
+}
+.detailData .topRight .bottomBtn #BtnOne{
+	width: 60px;
+	height: 25px;
+	background-color: #1E90FF;
+	float: right;
+	color: white;
+	border: 0;
+	border-radius: 3px;
+}
+.detailData .bottomLeft{
+	width: 40%;
+	height: 320px;	
+	background-color: white;
+	margin-top: 15px;
+}
+.detailData .bottomLeft .HeaderContainer{
+	width: 100%;
+	height: 270px;
+	padding: 8px 15px;
+}
+.detailData .bottomLeft .HeaderContainer .YearM{
+	height: 30px;
+	border-bottom: 1px solid #1E90FF;
+}
+.detailData .bottomLeft .HeaderContainer .YearM select{
+	width:calc(25% - 5px);
+	height: 25px;
+	text-align: center;
+}
+.detailData .bottomLeft .HeaderContainer .YearM input{
+	width:25%;
+	height: 25px;
+	border: 1px solid black;
+	background-color: white;
+	transition: all .3s;
+}
+.detailData .bottomLeft .HeaderContainer .YearM input:hover{
+	cursor: pointer;
+	border: 1px solid transparent;
+	color: white;
+	background-color: #1E90FF;
+}
+.detailData .bottomLeft .HeaderContainer .Firday{
+	height: 30px;
+	width: 100%;
+	border-bottom: 1px solid #d7d5d6;
+	padding: 0px 3%;
+}
+.detailData .bottomLeft .HeaderContainer .Firday ul{
+	height: 30px;
+	width: 100%;
+}
+.detailData .bottomLeft .HeaderContainer .Firday ul li{
+	float: left;
+	height: 30px;
+	width: 14%;
+	text-align: center;
+	line-height: 30px;
+}
+.detailData .bottomLeft .HeaderContainer .ditelaDay{
+	padding:  0 3%;
+}
+.detailData .bottomLeft .HeaderContainer .Blank{
+	width: 56%;
+	height: 40px;
+	float: left;
+}
+.detailData .bottomLeft .HeaderContainer .DayT{
+	width: 14%;
+	height: 40px;
+	text-align: center;
+	padding: 2px;
+	float: left;
+}
+.detailData .bottomLeft .HeaderContainer .DayT .RedText{
+	color:#8B0000;
+}
+.detailData .bottomLeft .HeaderContainer .BorderDay{
+	border: 1px solid #F8D573;
+}
+
+.detailData .bottomRight{
+	width: calc(60% - 15px);
+	height: 320px;
+	background-color: white;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+.detailData .bottomRight .CarContainer{
+	width: 100%;
+	height: 270px;
+	padding: 10px 30px;
+}
+.detailData .bottomRight .CarContainer p{
+	line-height: 25px;
+}
+.detailData .bottomRight .CarContainer .CarPageT{
+	width: 100%;
+	height: 25px;
+	border: 1px solid #d7d5d6;
+}
+.detailData .bottomRight .CarContainer .Carleft{
+	width: 15%;
+	text-align: center;
+	height: 25px;
+	border-right: 1px solid #d7d5d6;
+}
+.detailData .bottomRight .CarContainer .Carmid{
+	width: 15%;
+	height: 25px;
+	text-align: center;
+	border-right: 1px solid #d7d5d6;
+}
+.detailData .bottomRight .CarContainer .Carright{
+	width: 15%;
+	height: 25px;
+	text-align: center;
+}
+.detailData .bottomRight .CarContainer .Carright span{
+	line-height: 25px;
+}
+.detailData .bottomRight .CarContainer .Line{
+	width: 50%;
+	height: 25px;
+	margin-left: 5px;
+	text-align: center;
+}
+.detailData .bottomRight .CarContainer .Line b{
+	width: 90%;
+	height: 4px;
+	border-radius: 3px;
+	display: inline-block;
+	margin-top: 9px;
+	background-color: #CBCCCC;
+	position: relative;
+}
+.detailData .bottomRight .CarContainer .Line i{
+	width: 37%;
+	height: 4px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 3px;
+	display: inline-block;
+	background-color:#1E90FF;
+}
+.detailData .bottomRight .CarContainer .CarPage{
+	width: 100%;
+	height: 25px;
+	border: 1px solid #d7d5d6;
+	border-top: 0;
+	overflow: hidden;
+}

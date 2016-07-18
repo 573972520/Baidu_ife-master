@@ -1,0 +1,261 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: lightgray;
+	font: 15px/26px "黑体";
+}
+
+.mid {
+	background-color: white;
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 90%;
+	min-width: 550px;
+	height: auto;
+	box-shadow: 3px 3px 1px gray;
+}
+
+.forms {
+	background-color: white;
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 90%;
+	min-width: 550px;
+	height: auto;
+	box-shadow: 3px 3px 1px gray;
+}
+
+.header {
+	width: 100%;
+	height: 70px;
+	background-color: #2b2a2a;
+	min-width: 700px;
+}
+
+.img {
+	width: 120px;
+	float: left;
+	margin-left: 80px;
+}
+
+span a img {
+	width: 100%;
+	background-size: cover;
+	margin: 11px auto;
+}
+
+.header ul {
+	float: right;
+	margin-right: 30px;
+	width: 400px;
+}
+
+.header ul li {
+	float: right;
+	width: 100px;
+}
+
+.header ul li a {
+	text-align: center;
+	line-height: 70px;
+	text-decoration: none;
+	color: white;
+}
+
+.header ul li a:hover {
+	color: dimgray;
+}
+
+.content {
+	width: 95%;
+	margin: 0 auto;
+	height: auto;
+}
+
+.first {
+	display: block;
+}
+
+.autoimg {
+	width: 30%;
+}
+
+.autoimg img {
+	width: 90%;
+}
+
+.sencond {
+	color: gray;
+	display: block;
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.author {
+	color: gray;
+	font-size: 12px;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 7px;
+	font-weight: 300;
+}
+
+p {
+	text-indent: 2em;
+}
+
+.ulList {
+	margin-left: 40px;
+}
+
+.ulList li {
+	list-style: none;
+}
+
+.olList {
+	margin-left: 40px;
+}
+
+.imgBox {
+	width: 20%;
+	border: 1px solid black;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.imgBox h5 {
+	text-align: center;
+	font-weight: 400;
+	font-size: .8em;
+}
+
+.imgBox img {
+	width: 90%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	padding: 5%;
+}
+
+#tablecss {
+	text-indent: 0;
+}
+
+.Table {
+	width: 100%;
+	border-collapse: collapse;
+	border-color: #ccc;
+}
+
+.Table .Tfirst {
+	background-color: #333;
+	color: white;
+	font-weight: 600;
+}
+
+.Table .Tlast {
+	background-color: darkgray;
+}
+
+.Table .Tlast td{
+	font-weight: 600;
+}
+
+.sideText {
+	font-size: 16px;
+	display: block;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 20px;
+	border-left: 3px darkgray solid;
+}
+
+.Form {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.Form .EmailForm {
+	width: 98%;
+	margin: 0 auto;
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+
+.Form .EmailForm .infoTips {
+	width: 35%;
+	float: left;
+}
+
+.Form .EmailForm .Input {
+	width: 60%;
+	float: right;
+}
+
+.Form .EmailForm .Input textarea {
+	width: 80%;
+}
+
+.Form .infoTips label {
+	display: block;
+	text-align: right;
+}
+
+.Form .EmailTip {
+	width: 98%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.Form .Put {
+	width: 35%;
+	float: left;
+}
+
+.Form .info {
+	width: 60%;
+	float: right;
+}
+
+.Form .info i {
+	font-size: 13px;
+	color: gray;
+	font-style: normal;
+}
+
+.Submit {
+	display: block;
+	width: 100%;
+	height: 40px;
+	border-radius: 10px;
+	margin: 0 auto;
+	background-color: dodgerblue;
+}
+
+.Submit p {
+	text-align: center;
+	font-size: 17px;
+	font-weight: 600;
+	color: white;
+}
+
+.footer {
+	width: 100%;
+	min-width: 550px;
+	height: 70px;
+	margin: 0 auto;
+	margin-top: 20px;
+	background-color: black;
+}
+
+.footer p {
+	color: white;
+	text-align: center;
+	line-height: 70px;
+	font-weight: 600;
+}

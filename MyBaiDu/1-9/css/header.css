@@ -1,0 +1,59 @@
+.header{
+	width: 100%;
+	height: 56px;
+	background-color: #2189BF;
+}
+.header .logo img{
+	margin-top: 10px;
+	margin-left: 80px;
+	float: left;
+}
+.header .login{
+	height: 56px;
+	position: relative;
+	margin-right: 80px;
+}
+.header .login .search input{
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border: 1px solid transparent;
+	border-left: 0;
+	border-left: 0;
+	width: 190px;
+	height: 30px;
+	background-color: white;
+	margin: 13px 0;
+	transition: all .5s;
+}
+.header .login .search input:focus{
+	width: 300px;
+}
+.header .login .search .icon-search{
+	width: 36px;
+	height: 30px;
+	display: inline-block;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-color: white;
+	position: absolute;
+	top: 13px;
+	left: -36px;
+}
+.header .login .search #icon-search{
+	position: absolute;
+	top: 20px;
+	left: -25px;
+}
+.loginMain{
+	height: 56px;
+}
+.loginMain img{
+	margin: 20px 5px;
+	margin-left: 15px;
+}
+.loginMain  p{
+	color: white;
+	float: right;
+	line-height: 56px;
+	margin-left: 5px;
+}
